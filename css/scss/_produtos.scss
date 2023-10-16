@@ -8,8 +8,8 @@
 }
 
 .produto_item h2{
-	color: #fff;
-	font-size: 36px;
+	color: $white;
+	@include tipo-1(36);
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-weight: bold;
@@ -17,6 +17,14 @@
 	top: -180px;
 	text-align: center;
 	margin-bottom: -56px;
+	@include d(t) {
+		top: -150px;
+		margin-bottom: -56px;
+	}
+	@include d(m) {
+		top: -100px;
+		margin-bottom: -68px;
+	}
 }
 
 .produto_item h2:after, .produto_item h2:before{
@@ -24,13 +32,19 @@
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fff;
+	background: $white;
 	margin: 6px auto 8px auto;
 }
 
 .produto_icone {
-	background: #000;
+	background: $black;
 	padding: 70px 0;
+	@include d(t) {
+		padding: 41px 0;
+	}
+	@include d(m) {
+		padding: 41px 0;
+	}
 }
 
 .produto_icone img{
@@ -38,22 +52,31 @@
 }
 
 .produto_info {
-	background: #000;
+	background: $black;
 }
 
 .produto_info p{
-	color: #fff;
-	font-size: 18px;
-	line-height: 25px;
+	color: $white;
+	@include tipo-1(18);
 	height: 180px;
 	padding: 30px 40px;
+	@include d(t) {
+		@include tipo-1(14);
+		height: 122px;
+		padding: 20px 30px;
+	}
+	@include d(m) {
+		@include tipo-1(14);
+		height: auto;
+		padding: 20px 30px;
+	}
 }
 
 
 .produto_info ul li {
-	background: #fec63e;
+	background: $amarelo;
 	text-transform: uppercase;
-	font-size: 18px;
+	@include tipo-1(18);
 	line-height: 20px;
 	font-weight: bold;
 	float: left;
@@ -61,6 +84,16 @@
 	height: 49px;
 	text-align: center;
 	padding-top: 16px;
+	@include d(t) {
+		width: 181px;
+		height: 49px;
+	}
+	@include d(m) {
+		width: 149px;
+		height: 49px;
+		@include tipo-1(14);
+		padding-top: 14px;
+	}
 }
 
 .produto_info ul li:nth-child(1), .produto_info ul li:nth-child(2) {
@@ -74,58 +107,57 @@
 /*Orçamento*/
 
 .orcamento {
-	background: #000;
+	background: $black;
 	width: 100%;
 	margin-top: 60px;
 	padding: 40px 0;
 }
 
 .orcamento h2 {
-	color: #fec63e;
+	color: $amarelo;
 }
 
 .orcamento h2:after {
-	background: #fec63e;
+	background: $amarelo;
 }
 
 .form {
 	padding-right: 60px;
+	@include d(m) {
+		padding-right: 0px;
+	}
 }
 
 .form label{
 	display: block;
-	color: #fff;
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 18px;
-	line-height: 25px;
+	color: $white;
+	@include tipo-2(18);
 	margin-bottom: 4px;
 }
 
 .form input {
 	display: block;
 	width: 100%;
-	border: 4px solid #fec63e;
+	border: 4px solid $amarelo;
 	background: none;
-	color: #fff;
+	color: $white;
 	padding: 7px 10px;
 	margin-bottom: 10px;
 	outline: none;
-	font-size: 14px;
-	font-family: Georgia, "Times New Roman", serif;
+	@include tipo-2(14);
 }
 
 .form textarea {
 	display: block;
 	width: 100%;
 	height: 120px;
-	border: 4px solid #fec63e;
+	border: 4px solid $amarelo;
 	background: none;
-	color: #fff;
+	color: $white;
 	padding: 7px 10px;
 	margin-bottom: 20px;
 	outline: none;
-	font-size: 14px;
-	font-family: Georgia, "Times New Roman", serif;
+	@include tipo-2(14);
 }
 
 .form button {
@@ -134,22 +166,20 @@
 }
 
 .orcamento_dados {
-	color: #fff;
+	color: $white;
 }
 
 .orcamento_dados h3{
-	font-size: 18px;
-	line-height: 25px;
+	@include tipo-1(18);
 	text-transform: uppercase;
-	color: #fec63e;
+	color: $amarelo;
 	font-weight: bold;
 }
 
 .orcamento_dados span {
 	display: block;
-	font-size: 18px;
+	@include tipo-2(18);
 	line-height: 30px;
-	font-family: Georgia, "Times New Roman", serif;
 }
 
 .orcamento_dados span:nth-of-type(2) {
@@ -158,11 +188,13 @@
 
 .orcamento_dados ul {
 	padding-right: 60px;
+	@include d(m) {
+		padding-right: 0px;
+	}
 }
 
 .orcamento_dados ul li {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 14px;
+	@include tipo-2(14);
 	padding: 10px 15px;
 }
 

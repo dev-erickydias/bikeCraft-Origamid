@@ -11,15 +11,13 @@
 
 .quote_clientes p{
 	text-align: center;
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 18px;
-	line-height: 25px;
 	font-style: italic;
 	margin-bottom: 20px;
+	@include tipo-2(18);
 }
 
 .quote_clientes cite {
-	font-size: 18px;
+	@include tipo-1(18);
 	font-weight: bold;
 	float: right;
 	font-style: normal;
@@ -80,6 +78,6 @@
 }
 
 .rslides_tabs li a:hover, .rslides_tabs li.rslides_here a {
-	background: #fec63e;
-	color: #fec63e;
+	background: $amarelo;
+	color: $amarelo;
 }
