@@ -1,178 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Bikcraft - Bicicletas Personalizadas</title>
-		<meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+<head>
+  <meta charset="utf-8">
+  <title>Bikcraft — Bicicletas Feitas à Mão</title>
+  <meta name="description" content="Bicicletas artesanais personalizadas feitas à mão no Rio de Janeiro. Modelos Passeio, Esporte e Retrô.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<meta property="og:type" content="website"/>
-		<meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/>
-		<meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."/>
-		<meta property="og:url" content="http://bikcraft.com"/>
-		<meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bikcraft — Bicicletas Feitas à Mão">
+  <meta property="og:description" content="Bicicletas artesanais personalizadas feitas à mão no Rio de Janeiro.">
+  <meta property="og:image" content="img/og-image.png">
 
-		<link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-		<link rel="stylesheet" href="./css/style.css">
-		<script src="js/libs/modernizr.custom.45655.js"></script>
-	</head>
-	<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Bikcraft - Página inicial">
+        <img src="img/bikcraft.png" alt="Bikcraft" width="136" height="32">
+      </a>
+      <button class="header__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="main-nav" role="navigation" aria-label="Navegação principal">
+        <ul class="header__nav-list">
+          <li><a href="sobre.html" class="header__nav-link">Sobre</a></li>
+          <li><a href="produtos.html" class="header__nav-link">Produtos</a></li>
+          <li><a href="portfolio.html" class="header__nav-link">Portfólio</a></li>
+          <li><a href="contato.html" class="header__nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-		<header class="header">
-			<div class="container">
-				<a href="index.html" class="grid-4">
-					<img src="img/bikcraft.png" alt="Bikcraft">
-				</a>
-				<nav class="grid-12 header_menu">
-					<ul>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="produtos.html">Produtos</a></li>
-						<li><a href="portfolio.html">Portfólio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+  <!-- Hero -->
+  <section class="hero" aria-label="Apresentação">
+    <div class="hero__bg" role="img" aria-label="Bicicleta artesanal"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title reveal">Bicicletas<span>Feitas à Mão</span></h1>
+      <blockquote class="hero__quote reveal reveal-delay-2">
+        <p>"Não tenha nada em sua casa que você não considere útil ou acredite ser bonito."</p>
+        <cite>William Morris</cite>
+      </blockquote>
+      <a href="produtos.html" class="btn btn--solid reveal reveal-delay-3">Solicitar Orçamento</a>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">Scroll</div>
+  </section>
 
-		<section class="introducao">
-			<div class="container">
-				<h1>Bicicletas Feitas a Mão</h1>
-				<blockquote class="quote-externo">
-					<p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
-					<cite>WILLIAM MORRIS</cite>
-				</blockquote>
-				<a href="produtos.html" class="btn">Orçamento</a>
-			</div>
-		</section>
-		
-		<section class="produtos container animar">
-			<h2 class="subtitulo">Produtos</h2>
-			<ul class="produtos_lista">
+  <!-- Produtos -->
+  <section class="products" id="produtos" aria-label="Nossos produtos">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="section-title__label">Nossas linhas</span>
+        <h2 class="section-title__heading">Produtos</h2>
+      </div>
+      <div class="products__grid stagger-children">
+        <article class="product-card reveal">
+          <div class="product-card__icon">
+            <img src="img/produtos/passeio.png" alt="Bikcraft Passeio" width="140" height="140">
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Passeio</h3>
+            <p class="product-card__desc">Muito melhor do que passear pela orla a vidros fechados.</p>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-card__icon">
+            <img src="img/produtos/esporte.png" alt="Bikcraft Esporte" width="140" height="140">
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Esporte</h3>
+            <p class="product-card__desc">Mais rápida do que Forrest Gump, ninguém vai pegar você.</p>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-card__icon">
+            <img src="img/produtos/retro.png" alt="Bikcraft Retrô" width="140" height="140">
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Retrô</h3>
+            <p class="product-card__desc">O passado volta para lembrarmos o que devemos fazer no futuro.</p>
+          </div>
+        </article>
+      </div>
+      <div class="cta reveal">
+        <p>Clique e veja os detalhes dos produtos</p>
+        <a href="produtos.html" class="btn">Produtos</a>
+      </div>
+    </div>
+  </section>
 
-				<li class="grid-1-3">
-					<div class="produtos_icone">
-						<img src="img/produtos/passeio.png" alt="Bikcraft Passeio">
-					</div>
-					<h3>Passeio</h3>
-					<p>Muito melhor do que passear pela orla a vidros fechados.</p>
-				</li>
+  <!-- Portfólio -->
+  <section class="portfolio" aria-label="Portfólio">
+    <div class="container">
+      <div class="section-title section-title--light reveal">
+        <span class="section-title__label">Nosso trabalho</span>
+        <h2 class="section-title__heading">Portfólio</h2>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio__item reveal"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô" loading="lazy"></div>
+        <div class="portfolio__item reveal reveal-delay-1"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" loading="lazy"></div>
+        <div class="portfolio__item portfolio__item--wide reveal reveal-delay-2"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" loading="lazy"></div>
+      </div>
+      <div class="cta cta--light reveal">
+        <p>Conheça mais o nosso portfólio</p>
+        <a href="portfolio.html" class="btn">Portfólio</a>
+      </div>
+    </div>
+  </section>
 
-				<li class="grid-1-3">
-					<div class="produtos_icone">
-						<img src="img/produtos/esporte.png" alt="Bikcraft Esporte">
-					</div>
-					<h3>Esporte</h3>
-					<p>Mais rápida do que Forrest Gump, ninguém vai pegar você.</p>
-				</li>
+  <!-- Qualidade -->
+  <section class="quality" aria-label="Qualidade">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="section-title__label">Por que nos escolher</span>
+        <h2 class="section-title__heading">Qualidade</h2>
+      </div>
+      <div class="quality__image reveal">
+        <img src="img/bikcraft-qualidade.png" alt="Bikcraft Qualidade" loading="lazy">
+      </div>
+      <div class="quality__grid stagger-children">
+        <div class="quality__item reveal">
+          <h3 class="quality__item-title">Durabilidade</h3>
+          <p>Sólida como pedra, leve como o vento e resistente como o diamante, são nossos diferenciais.</p>
+        </div>
+        <div class="quality__item reveal">
+          <h3 class="quality__item-title">Design</h3>
+          <p>Feitas sob medida para o melhor conforto e eficiência. Adaptamos a sua Bikcraft para o seu corpo.</p>
+        </div>
+        <div class="quality__item reveal">
+          <h3 class="quality__item-title">Sustentabilidade</h3>
+          <p>Além de ajudar a cuidar do meio ambiente, tirando carros da rua, toda a produção é sustentável.</p>
+        </div>
+      </div>
+      <div class="cta reveal">
+        <p>Conheça mais a nossa história</p>
+        <a href="sobre.html" class="btn">Sobre</a>
+      </div>
+    </div>
+  </section>
 
-				<li class="grid-1-3">
-					<div class="produtos_icone">
-						<img src="img/produtos/retro.png" alt="Bikcraft Retrô">
-					</div>
-					<h3>Retrô</h3>
-					<p>O passado volta para lembrarmos o que devemos fazer no futuro.</p>
-				</li>
+  <!-- Quote Break -->
+  <section class="quote-break" aria-label="Citação">
+    <blockquote class="quote-break__content reveal">
+      <p class="quote-break__text">"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."</p>
+      <cite>William Morris</cite>
+    </blockquote>
+  </section>
 
-			</ul>
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="reveal">
+          <h3 class="footer__title">Nossa História</h3>
+          <p class="footer__text">Quando iniciamos a Bikcraft queríamos apenas um produto que adoraríamos utilizar. Éramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <h3 class="footer__title">Contato</h3>
+          <ul class="footer__contact-list">
+            <li>21 9999-9999</li>
+            <li>contato@bikcraft.com</li>
+            <li>Botafogo — RJ</li>
+          </ul>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h3 class="footer__title">Redes Sociais</h3>
+          <div class="footer__social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook Bikcraft"><img src="img/redes-sociais/facebook.png" alt="" width="18" height="18"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram Bikcraft"><img src="img/redes-sociais/instagram.png" alt="" width="18" height="18"></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter Bikcraft"><img src="img/redes-sociais/twitter.png" alt="" width="18" height="18"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <p>Bikcraft 2026 — Alguns direitos reservados.</p>
+    </div>
+  </footer>
 
-			<div class="call">
-				<p>clique aqui e veja os detalhes dos produtos</p>
-				<a href="produtos.html" class="btn btn-preto">Produtos</a>
-			</div>
-
-		</section>
-		<!-- Fecha Produtos -->
-
-		<section class="portfolio">
-			<div class="container">
-				<h2 class="subtitulo">Portfólio</h2>
-				<div class="portfolio_lista">
-					<div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></div>
-					<div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
-					<div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
-				</div>
-				<div class="call">
-					<p>conheça mais o nosso portfólio</p>
-					<a href="portfolio.html" class="btn">Portfólio</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="qualidade container">
-			<h2 class="subtitulo">Qualidade</h2>
-			<img src="img/bikcraft-qualidade.png" alt="Bikcraft">
-			<ul class="qualidade_lista">
-				<li class="grid-1-3">
-					<h3>Durabilidade</h3>
-					<p>Sólida como pedra, leve como o vento e resistente como o diamante, são nossos diferenciais.</p>
-				</li>
-				<li class="grid-1-3">
-					<h3>Design</h3>
-					<p>Feitas sob medida para o melhor conforto e eficiência. Adaptamos a sua Bikcraft para o seu corpo.</p>
-				</li>
-				<li class="grid-1-3">
-					<h3>Sustentabilidade</h3>
-					<p>Além de ajudar a cuidar do meio ambiente, tirando carros da rua, toda a produção é sustentável.</p>
-				</li>
-			</ul>
-			<div class="call">
-				<p>conheça mais a nossa história</p>
-				<a href="sobre.html" class="btn btn-preto">Sobre</a>
-			</div>
-		</section>
-
-		<div class="quebra">
-			<blockquote class="quote-externo container">
-				<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
-				<cite>WILLIAM MORRIS</cite>
-			</blockquote>
-		</div>
-
-		<footer>
-			<div class="footer">
-				<div class="container">
-
-					<div class="grid-8 footer_historia">
-						<h3>Nossa História</h3>
-						<p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
-					</div>
-
-					<div class="grid-4 footer_contato">
-						<h3>Contato</h3>
-						<ul>
-							<li>- 21 9999-9999</li>
-							<li>- contato@bikcraft.com</li>
-							<li>- Botafago - RJ</li>
-						</ul>
-					</div>
-
-					<div class="grid-4 footer_redes">
-						<h3>Contato</h3>
-						<ul>
-							<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
-							<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
-							<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="copy">
-				<div class="container">
-					<p class="grid-16">Bikcraft 2015 - Alguns direitos reservados.</p>
-				</div>
-			</div>
-		</footer>
-
-	<!-- JavaScript -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
-	<!-- JavaScript -->
-
-	</body>
+  <script src="js/main.js" defer></script>
+</body>
 </html>
