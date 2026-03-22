@@ -3,25 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Bikcraft — Produtos | Passeio, Esporte e Retrô</title>
-  <meta name="description" content="Conheça as linhas de bicicletas personalizadas Bikcraft: Passeio, Esporte e Retrô. Solicite seu orçamento.">
+  <meta name="description" content="Conheça as linhas de bicicletas personalizadas Bikcraft: Passeio, Esporte e Retrô.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="Bikcraft — Produtos">
   <meta property="og:description" content="Conheça as linhas de bicicletas personalizadas Bikcraft.">
   <meta property="og:image" content="img/og-image.png">
-
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-internal">
 
-  <!-- Header -->
-  <header class="header" role="banner">
+  <header class="header is-scrolled" role="banner">
     <div class="container header__inner">
       <a href="index.html" class="header__logo" aria-label="Bikcraft - Página inicial">
         <img src="img/bikcraft.png" alt="Bikcraft" width="136" height="32">
@@ -29,7 +25,7 @@
       <button class="header__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>
-      <nav class="header__nav" id="main-nav" role="navigation" aria-label="Navegação principal">
+      <nav class="header__nav" id="main-nav" aria-label="Navegação principal">
         <ul class="header__nav-list">
           <li><a href="sobre.html" class="header__nav-link">Sobre</a></li>
           <li><a href="produtos.html" class="header__nav-link is-active">Produtos</a></li>
@@ -40,16 +36,16 @@
     </div>
   </header>
 
-  <!-- Hero Internal -->
-  <section class="hero-internal hero-internal--produtos">
-    <div class="hero-internal__bg"></div>
+  <section class="hero-internal">
+    <div class="hero-internal__bg">
+      <img src="https://images.unsplash.com/photo-1540207605711-f0b85c37c8ff?w=1920&q=80&auto=format&fit=crop" alt="Oficina de bicicletas artesanais">
+    </div>
     <div class="hero-internal__content">
       <h1 class="hero-internal__title reveal">Produtos</h1>
       <p class="hero-internal__subtitle reveal reveal-delay-1">Conheça todos os nossos produtos</p>
     </div>
   </section>
 
-  <!-- Produto: Passeio -->
   <section class="product-detail" aria-label="Bikcraft Passeio">
     <div class="container">
       <div class="product-detail__inner reveal">
@@ -61,7 +57,7 @@
             </div>
           </div>
           <div><img src="img/produtos/bikcraft-passeio-2.jpg" alt="Bikcraft Passeio detalhe" loading="lazy"></div>
-          <div class="product-detail__sidebar-icon" style="background:var(--c-black);display:flex;align-items:center;justify-content:center;padding:2rem;">
+          <div style="background:var(--c-olive);display:flex;align-items:center;justify-content:center;padding:2rem;border-radius:var(--radius);">
             <img src="img/produtos/passeio.png" alt="Ícone Passeio" loading="lazy">
           </div>
         </div>
@@ -81,7 +77,6 @@
     </div>
   </section>
 
-  <!-- Produto: Esporte -->
   <section class="product-detail" aria-label="Bikcraft Esporte">
     <div class="container">
       <div class="product-detail__inner reveal">
@@ -93,7 +88,7 @@
             </div>
           </div>
           <div><img src="img/produtos/bikcraft-esporte-2.jpg" alt="Bikcraft Esporte detalhe" loading="lazy"></div>
-          <div style="background:var(--c-black);display:flex;align-items:center;justify-content:center;padding:2rem;">
+          <div style="background:var(--c-olive);display:flex;align-items:center;justify-content:center;padding:2rem;border-radius:var(--radius);">
             <img src="img/produtos/esporte.png" alt="Ícone Esporte" loading="lazy">
           </div>
         </div>
@@ -113,7 +108,6 @@
     </div>
   </section>
 
-  <!-- Produto: Retrô -->
   <section class="product-detail" aria-label="Bikcraft Retrô">
     <div class="container">
       <div class="product-detail__inner reveal">
@@ -125,7 +119,7 @@
             </div>
           </div>
           <div><img src="img/produtos/bikcraft-retro-2.jpg" alt="Bikcraft Retrô detalhe" loading="lazy"></div>
-          <div style="background:var(--c-black);display:flex;align-items:center;justify-content:center;padding:2rem;">
+          <div style="background:var(--c-olive);display:flex;align-items:center;justify-content:center;padding:2rem;border-radius:var(--radius);">
             <img src="img/produtos/retro.png" alt="Ícone Retrô" loading="lazy">
           </div>
         </div>
@@ -145,7 +139,6 @@
     </div>
   </section>
 
-  <!-- Orçamento -->
   <section class="form-section" id="orcamento" aria-label="Solicitar orçamento">
     <div class="container">
       <div class="section-title section-title--light reveal">
@@ -166,15 +159,10 @@
             <label for="telefone" class="form__label">Telefone</label>
             <input id="telefone" name="telefone" type="tel" class="form__input" maxlength="20" placeholder="(21) 99999-9999" autocomplete="tel">
           </div>
-
-          <!-- Honeypot anti-spam (hidden from users) -->
           <div class="form__honeypot" aria-hidden="true">
-            <label for="leaveblank">Deixe em branco</label>
-            <input type="text" id="leaveblank" name="leaveblank" tabindex="-1" autocomplete="off">
-            <label for="dontchange">Não mude</label>
-            <input type="text" id="dontchange" name="dontchange" value="http://" tabindex="-1" autocomplete="off">
+            <input type="text" name="leaveblank" tabindex="-1" autocomplete="off">
+            <input type="text" name="dontchange" value="http://" tabindex="-1" autocomplete="off">
           </div>
-
           <div class="form__group">
             <label for="mensagem" class="form__label">Especificações</label>
             <textarea id="mensagem" name="mensagem" class="form__textarea" required maxlength="2000" placeholder="Descreva o que você precisa..."></textarea>
@@ -193,11 +181,7 @@
             <h3 class="contact-data__specs-title">Monte a sua Bikcraft</h3>
             <p class="contact-data__item" style="margin-bottom:0.5rem;">Escolha as especificações:</p>
             <ul class="contact-data__specs-list">
-              <li>Cores</li>
-              <li>Estilo</li>
-              <li>Medidas</li>
-              <li>Acessórios</li>
-              <li>E Outros</li>
+              <li>Cores</li><li>Estilo</li><li>Medidas</li><li>Acessórios</li><li>E Outros</li>
             </ul>
           </div>
         </div>
@@ -205,43 +189,25 @@
     </div>
   </section>
 
-  <!-- Quote Break -->
   <section class="quote-break" aria-label="Citação">
-    <blockquote class="quote-break__content reveal">
+    <div class="quote-break__bg">
+      <img src="https://images.unsplash.com/photo-1629534551635-763db44ea443?w=1920&q=80&auto=format&fit=crop" alt="" loading="lazy">
+    </div>
+    <blockquote class="quote-break__content container reveal">
       <p class="quote-break__text">"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."</p>
       <cite>William Morris</cite>
     </blockquote>
   </section>
 
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
-        <div class="reveal">
-          <h3 class="footer__title">Nossa História</h3>
-          <p class="footer__text">Quando iniciamos a Bikcraft queríamos apenas um produto que adoraríamos utilizar. Éramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
-        </div>
-        <div class="reveal reveal-delay-1">
-          <h3 class="footer__title">Contato</h3>
-          <ul class="footer__contact-list">
-            <li>21 9999-9999</li>
-            <li>contato@bikcraft.com</li>
-            <li>Botafogo — RJ</li>
-          </ul>
-        </div>
-        <div class="reveal reveal-delay-2">
-          <h3 class="footer__title">Redes Sociais</h3>
-          <div class="footer__social">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/redes-sociais/facebook.png" alt="" width="18" height="18"></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/redes-sociais/instagram.png" alt="" width="18" height="18"></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="img/redes-sociais/twitter.png" alt="" width="18" height="18"></a>
-          </div>
-        </div>
+        <div><h3 class="footer__title">Nossa História</h3><p class="footer__text">Quando iniciamos a Bikcraft queríamos apenas um produto que adoraríamos utilizar. Éramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos.</p></div>
+        <div><h3 class="footer__title">Contato</h3><ul class="footer__contact-list"><li>21 9999-9999</li><li>contato@bikcraft.com</li><li>Botafogo — RJ</li></ul></div>
+        <div><h3 class="footer__title">Redes Sociais</h3><div class="footer__social"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/redes-sociais/facebook.png" alt="" width="16" height="16"></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/redes-sociais/instagram.png" alt="" width="16" height="16"></a><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="img/redes-sociais/twitter.png" alt="" width="16" height="16"></a></div></div>
       </div>
     </div>
-    <div class="footer__copy">
-      <p>Bikcraft 2026 — Alguns direitos reservados.</p>
-    </div>
+    <div class="footer__copy"><p>Bikcraft 2026 — Alguns direitos reservados.</p></div>
   </footer>
 
   <script src="js/main.js" defer></script>

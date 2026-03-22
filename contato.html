@@ -5,23 +5,19 @@
   <title>Bikcraft — Contato | Fale Conosco</title>
   <meta name="description" content="Entre em contato com a Bikcraft. Tire suas dúvidas e solicite um orçamento para sua bicicleta personalizada.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="Bikcraft — Contato">
   <meta property="og:description" content="Entre em contato com a Bikcraft.">
   <meta property="og:image" content="img/og-image.png">
-
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-internal">
 
-  <!-- Header -->
-  <header class="header" role="banner">
+  <header class="header is-scrolled" role="banner">
     <div class="container header__inner">
       <a href="index.html" class="header__logo" aria-label="Bikcraft - Página inicial">
         <img src="img/bikcraft.png" alt="Bikcraft" width="136" height="32">
@@ -29,7 +25,7 @@
       <button class="header__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>
-      <nav class="header__nav" id="main-nav" role="navigation" aria-label="Navegação principal">
+      <nav class="header__nav" id="main-nav" aria-label="Navegação principal">
         <ul class="header__nav-list">
           <li><a href="sobre.html" class="header__nav-link">Sobre</a></li>
           <li><a href="produtos.html" class="header__nav-link">Produtos</a></li>
@@ -40,16 +36,16 @@
     </div>
   </header>
 
-  <!-- Hero Internal -->
-  <section class="hero-internal hero-internal--contato">
-    <div class="hero-internal__bg"></div>
+  <section class="hero-internal">
+    <div class="hero-internal__bg">
+      <img src="https://images.unsplash.com/photo-1549968723-c12219cce647?w=1920&q=80&auto=format&fit=crop" alt="Bicicleta em cenário urbano">
+    </div>
     <div class="hero-internal__content">
       <h1 class="hero-internal__title reveal">Contato</h1>
       <p class="hero-internal__subtitle reveal reveal-delay-1">Tire suas dúvidas com a gente</p>
     </div>
   </section>
 
-  <!-- Contact Form -->
   <section class="form-section form-section--light" aria-label="Formulário de contato">
     <div class="container">
       <div class="form-grid">
@@ -66,24 +62,18 @@
             <label for="telefone" class="form__label">Telefone</label>
             <input id="telefone" name="telefone" type="tel" class="form__input" maxlength="20" placeholder="(21) 99999-9999" autocomplete="tel">
           </div>
-
-          <!-- Honeypot anti-spam -->
           <div class="form__honeypot" aria-hidden="true">
-            <label for="leaveblank2">Deixe em branco</label>
-            <input type="text" id="leaveblank2" name="leaveblank" tabindex="-1" autocomplete="off">
-            <label for="dontchange2">Não mude</label>
-            <input type="text" id="dontchange2" name="dontchange" value="http://" tabindex="-1" autocomplete="off">
+            <input type="text" name="leaveblank" tabindex="-1" autocomplete="off">
+            <input type="text" name="dontchange" value="http://" tabindex="-1" autocomplete="off">
           </div>
-
           <div class="form__group">
             <label for="mensagem" class="form__label">Mensagem</label>
             <textarea id="mensagem" name="mensagem" class="form__textarea" required maxlength="2000" placeholder="Escreva sua mensagem..."></textarea>
           </div>
           <div class="form__submit">
-            <button type="submit" class="btn">Enviar</button>
+            <button type="submit" class="btn btn--dark">Enviar</button>
           </div>
         </form>
-
         <div class="contact-data reveal reveal-delay-1">
           <div class="contact-data__group">
             <h3 class="contact-data__title">Dados</h3>
@@ -95,9 +85,9 @@
           <div class="contact-data__group">
             <h3 class="contact-data__title">Redes Sociais</h3>
             <div class="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook Bikcraft"><img src="img/redes-sociais/facebook.png" alt="" width="20" height="20"></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram Bikcraft"><img src="img/redes-sociais/instagram.png" alt="" width="20" height="20"></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter Bikcraft"><img src="img/redes-sociais/twitter.png" alt="" width="20" height="20"></a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/redes-sociais/facebook.png" alt="" width="18" height="18"></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/redes-sociais/instagram.png" alt="" width="18" height="18"></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="img/redes-sociais/twitter.png" alt="" width="18" height="18"></a>
             </div>
           </div>
         </div>
@@ -105,50 +95,31 @@
     </div>
   </section>
 
-  <!-- Map -->
   <section class="map-section container" aria-label="Localização">
     <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
       <img src="img/endereco-bikcraft.jpg" alt="Localização da Bikcraft em Botafogo, Rio de Janeiro" loading="lazy">
     </a>
   </section>
 
-  <!-- Quote Break -->
   <section class="quote-break" aria-label="Citação">
-    <blockquote class="quote-break__content reveal">
+    <div class="quote-break__bg">
+      <img src="https://images.unsplash.com/photo-1629534551635-763db44ea443?w=1920&q=80&auto=format&fit=crop" alt="" loading="lazy">
+    </div>
+    <blockquote class="quote-break__content container reveal">
       <p class="quote-break__text">"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."</p>
       <cite>William Morris</cite>
     </blockquote>
   </section>
 
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
-        <div class="reveal">
-          <h3 class="footer__title">Nossa História</h3>
-          <p class="footer__text">Quando iniciamos a Bikcraft queríamos apenas um produto que adoraríamos utilizar. Éramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
-        </div>
-        <div class="reveal reveal-delay-1">
-          <h3 class="footer__title">Contato</h3>
-          <ul class="footer__contact-list">
-            <li>21 9999-9999</li>
-            <li>contato@bikcraft.com</li>
-            <li>Botafogo — RJ</li>
-          </ul>
-        </div>
-        <div class="reveal reveal-delay-2">
-          <h3 class="footer__title">Redes Sociais</h3>
-          <div class="footer__social">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/redes-sociais/facebook.png" alt="" width="18" height="18"></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/redes-sociais/instagram.png" alt="" width="18" height="18"></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="img/redes-sociais/twitter.png" alt="" width="18" height="18"></a>
-          </div>
-        </div>
+        <div><h3 class="footer__title">Nossa História</h3><p class="footer__text">Quando iniciamos a Bikcraft queríamos apenas um produto que adoraríamos utilizar. Éramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos.</p></div>
+        <div><h3 class="footer__title">Contato</h3><ul class="footer__contact-list"><li>21 9999-9999</li><li>contato@bikcraft.com</li><li>Botafogo — RJ</li></ul></div>
+        <div><h3 class="footer__title">Redes Sociais</h3><div class="footer__social"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/redes-sociais/facebook.png" alt="" width="16" height="16"></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/redes-sociais/instagram.png" alt="" width="16" height="16"></a><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="img/redes-sociais/twitter.png" alt="" width="16" height="16"></a></div></div>
       </div>
     </div>
-    <div class="footer__copy">
-      <p>Bikcraft 2026 — Alguns direitos reservados.</p>
-    </div>
+    <div class="footer__copy"><p>Bikcraft 2026 — Alguns direitos reservados.</p></div>
   </footer>
 
   <script src="js/main.js" defer></script>
